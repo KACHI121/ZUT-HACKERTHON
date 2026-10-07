@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZUT Student Portal — Login</title>
+  <style>
+    body { font-family: sans-serif; max-width: 380px; margin: 60px auto; padding: 20px; }
+    input { display: block; width: 100%; padding: 8px; margin: 8px 0; box-sizing: border-box; }
+    button { padding: 8px 18px; }
+    .error { color: #b5502f; }
+  </style>
+</head>
+<body>
+  <h2>ZUT Student Portal</h2>
+  <h3>Login</h3>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <form method="POST">
+    <input type="text" name="student_id" placeholder="Student ID" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Log In</button>
+  </form>
+</body>
+</html>

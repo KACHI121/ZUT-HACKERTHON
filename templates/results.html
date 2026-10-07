@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <style>body { font-family: sans-serif; max-width: 480px; margin: 60px auto; padding: 20px; }</style>
+</head>
+<body>
+  <h2>Results for {{ student.name }} ({{ student.student_id }})</h2>
+  <p>Fees paid: {{ student.fees_paid }}% of {{ student.fees_required }}% required</p>
+  <p><strong>Semester Result: PASS — GPA 3.8</strong></p>
+  <p><a href="/dashboard">Back to Dashboard</a></p>
+</body>
+</html>
