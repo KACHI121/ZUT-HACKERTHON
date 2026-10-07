@@ -59,5 +59,28 @@ Design a stronger security architecture for a real campus deployment:
 Treat each level as an opportunity to demonstrate both a working implementation and
 the reasoning behind your security decisions.
 
+## Judging criteria
+
+The challenge is scored out of 100 points. Judges award points for working
+security improvements, clear demonstrations, and sound technical reasoning.
+
+| Criterion | Points |
+|---|---:|
+| Password generator/checker | 20 |
+| Secure login: password hashing and lockout | 20 |
+| Fee-based access enforced server-side | 25 |
+| Blocks URL tampering / IDOR | 15 |
+| Logging and clarity of demonstration | 10 |
+| Creativity and presentation | 10 |
+| **Total** | **100** |
+
+The exact attack scenarios and test cases are for the judging panel. Partial
+credit may be awarded for incomplete but meaningful progress. Interface-only
+controls, such as hiding a button without enforcing authorization on the server,
+do not satisfy the relevant security criterion.
+
+The open Wi-Fi route is part of the scenario but is not scored directly. A short
+Wi-Fi security proposal may be included as a Level 3 stretch goal.
+
 **Hint:** never trust the browser. Anything a user can see or change can be
 manipulated — check permissions on the server, every time.
